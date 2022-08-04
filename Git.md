@@ -565,15 +565,6 @@ git-log
 2. 代码及时提交，提交过了就不会丢 
 3. 遇到任何问题都不要删除文件目录，第1时间找老师
 
-### Git安装与常用命令
-
-本教程里的git命令例子都是在Git Bash中演示的，会用到一些基本的linux命令，在此为大家提前列举：
-
-- ls/ll 查看当前目录 ll是查看当前文件夹下的所有文件，包括隐藏文件
-- cat 查看文件内容
-- touch 创建文件
-- vi vi编辑器（使用vi编辑器是为了方便展示效果，学员可以记事本、editPlus、notPad++等其它编辑器）
-
 ### 基础操作指令
 
 ![image-20220802215744665](https://raw.githubusercontent.com/makev5/picture/main/img/image-20220802215744665.png)
