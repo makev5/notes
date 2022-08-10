@@ -686,7 +686,7 @@ rm /usr/local/bin/docker-compose
 
 2. 编写`docker-compose.yml`文件
 
-   ```shell
+   ```yaml
    version: '3'
    services:
      nginx:
