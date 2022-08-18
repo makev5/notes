@@ -924,15 +924,15 @@ Memory 引擎的表数据是存储在内存中的，受硬件问题、断电问�
 
 电商中的足迹和评论适合使用 MyISAM 引擎，缓存适合使用 Memory 引擎。
 
-## 性能分析
+### 性能分析
 
-### 查看执行频次
+#### 查看执行频次
 
 查看当前数据库的 INSERT, UPDATE, DELETE, SELECT 访问频次：
 `SHOW GLOBAL STATUS LIKE 'Com_______';` 或者 `SHOW SESSION STATUS LIKE 'Com_______';`
 例：`show global status like 'Com_______'`
 
-### 慢查询日志
+#### 慢查询日志
 
 慢查询日志记录了所有执行时间超过指定参数（long_query_time，单位：秒，默认10秒）的所有SQL语句的日志。
 MySQL的慢查询日志默认没有开启，需要在MySQL的配置文件（/etc/my.cnf）中配置如下信息：
@@ -945,7 +945,7 @@ MySQL的慢查询日志默认没有开启，需要在MySQL的配置文件（/etc
 查看慢查询日志开关状态：
 `show variables like 'slow_query_log';`
 
-### profile
+#### profile
 
 show profile 能在做SQL优化时帮我们了解时间都耗费在哪里。通过 have_profiling 参数，能看到当前 MySQL 是否支持 profile 操作：
 `SELECT @@have_profiling;`
@@ -958,7 +958,7 @@ profiling 默认关闭，可以通过set语句在session/global级别开启 prof
 查看指定query_id的SQL语句CPU的使用情况
 `show profile cpu for query query_id;`
 
-### explain
+#### explain
 
 EXPLAIN 或者 DESC 命令获取 MySQL 如何执行 SELECT 语句的信息，包括在 SELECT 语句执行过程中表如何连接和连接的顺序。
 语法：
